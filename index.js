@@ -6,7 +6,9 @@ import router from './Routes/emailRoute.js';
 const app = express();
 
 dotenv.config();
-app.use(cors());
+app.use(cors({
+    origin: 'https://shreenarayanicastings.com'
+  }));
 app.use(express.json());
 
 app.use('/email', router);
