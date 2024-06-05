@@ -12,10 +12,6 @@ app.use(express.json());
 app.use('/email', router);
 app.use('/contact', router);
 
-app.get('/', (req, res) => {
-    res.send('Server is ready');
-});
-
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
