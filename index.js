@@ -7,7 +7,7 @@ const app = express();
 
 dotenv.config();
 app.use(cors({
-  origin: ['https://shreenarayanicastings.com', 'https://www.shreenarayanicastings.com']
+  origin: '*',
 }));
 app.use(express.json());
 
